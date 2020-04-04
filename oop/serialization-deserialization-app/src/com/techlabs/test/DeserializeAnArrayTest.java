@@ -8,28 +8,24 @@ import com.techlabs.model.Account;
 
 public class DeserializeAnArrayTest {
 	public static void main(String[] args) {
-		Account[] acc = new Account[3];
+		Account[] accounts = new Account[3];
 		String filename = "file.data";
 
 		try {
 
 			FileInputStream file = new FileInputStream(filename);
 			ObjectInputStream ip = new ObjectInputStream(file);
-			acc[0] = (Account) ip.readObject();
-			acc[1] = (Account) ip.readObject();
-			acc[2] = (Account) ip.readObject();
+			accounts = (Account[]) ip.readObject();
+
 			ip.close();
 			file.close();
 
 			System.out.println("Object has been deserialized ");
-			for (Account a : acc) {
-				printInfo(a);
-
-			}
+			printInfo(accounts);
 
 		}
 
-		catch(IOException ex) {
+		catch (IOException ex) {
 			System.out.println("IOException is found");
 		}
 
@@ -39,10 +35,12 @@ public class DeserializeAnArrayTest {
 
 	}
 
-	public static void printInfo(Account a) {
-		System.out.println("Acc No. = " + a.getId());
-		System.out.println("Name = " + a.getName());
-		System.out.println("Balance = " + a.getBalance());
-		System.out.println();
+	public static void printInfo(Account a[]) {
+		for (Account accounts : a) {
+			System.out.println("Acc No. = " + accounts.getId());
+			System.out.println("Name = " + accounts.getName());
+			System.out.println("Balance = " + accounts.getBalance());
+			System.out.println();
+		}
 	}
 }

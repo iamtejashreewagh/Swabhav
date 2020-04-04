@@ -1,9 +1,10 @@
 package com.techlabs.model;
 
+import java.io.IOException;
 import java.io.Serializable;
 
-public class Account implements Serializable{
-	
+public class Account implements Serializable {
+
 	private int id;
 	private String name;
 	private double balance;
@@ -44,8 +45,6 @@ public class Account implements Serializable{
 	public int getId() {
 		return id;
 	}
+	
 
-	}
-
-
-
+}
