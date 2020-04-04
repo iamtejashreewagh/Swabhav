@@ -12,24 +12,25 @@ public class Account {
 		numOfTransactions = 0;
 	}
 
-	@Override
-	public String toString() {
-		super.toString();
-		String info = super.toString() + "\nid :" + id + "\nname : " + name + "\nammount : " + amount;
-		return info;
-	}
-	
-	public boolean equals (Account acc) {
-		if(this.id==acc.id && this.name==acc.name && this.amount==acc.amount) {
-		return true;
-		}
-		return false;
-	}
-
 	public Account(int id, String name, double amount) {
 		this.id = id;
 		this.name = name;
 		this.amount = amount;
+	}
+	
+	@Override
+	public String toString() {
+		String info = super.toString() + "\nid :" + id + "\nname : " + name + "\nammount : " + amount;
+		return info;
+	}
+	
+	@Override
+	public boolean equals (Object second) {
+		Account acc = (Account) second;
+		if(this.id==acc.id && this.name==acc.name && this.amount==acc.amount) {
+		return true;
+		}
+		return false;
 	}
 
 	public void withdraw(double amount) {
