@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class CsvReaderExample {
+public class ProductsTest {
 
 	public static void main(String[] args) {
 		String[] dataArray = new String[10];
