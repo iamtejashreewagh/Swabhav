@@ -5,9 +5,8 @@ public class Game {
 	private int randomNumber;
 	public int count;
 
-	public int generateNum() {
+	public void generateNum() {
 		randomNumber = (int) (100 * Math.random());
-		return randomNumber;
 	}
 
 	public int checkGuess(int guess) {

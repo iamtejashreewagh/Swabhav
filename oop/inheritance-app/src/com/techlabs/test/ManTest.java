@@ -35,7 +35,7 @@ public class ManTest {
 	public static void case3() {
 		System.out.println("\n");
 		Man x;
-		x = new Boy();
+  		x = new Boy();
 		x.play();
 		x.walk();
 		x.read();
