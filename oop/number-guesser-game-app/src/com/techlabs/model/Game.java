@@ -3,7 +3,7 @@ package com.techlabs.model;
 public class Game {
 
 	private int randomNumber;
-	public int count;
+	private int count;
 
 	public void generateNum() {
 		randomNumber = (int) (100 * Math.random());
@@ -22,6 +22,10 @@ public class Game {
 	
 	public int noOfAttempts() {
 		return count;
+	}
+	
+	public void setCount() {
+		this.count=0;
 	}
 	
 	

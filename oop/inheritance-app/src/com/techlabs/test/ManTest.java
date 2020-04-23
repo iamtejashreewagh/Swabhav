@@ -7,9 +7,9 @@ import com.techlabs.model.Man;
 
 public class ManTest {
 	public static void main(String[] args) {
-		//case1();
-		//case2();
-		//case3();
+		case1();
+		case2();
+		case3();
 		case4();
 		case5();
 	}

@@ -34,12 +34,7 @@ public class AccountTest {
 	}
 
 	public static Account[] findYoungAccHolders(Account[] accounts) {
-		int index=0;
-		for(int i=0; i< accounts.length; i++) {
-			if(accounts[i].getAge()<30) {
-				index++;
-			}
-		}
+		int index = accounts[0].getYoungAccHolders(accounts);
 		Account youngAccHolders[] = new Account[index];
 		for (int i=0,j=0; i < accounts.length; i++) {
 			if (accounts[i].getAge() < 30) {

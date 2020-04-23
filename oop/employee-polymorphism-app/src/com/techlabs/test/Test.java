@@ -8,18 +8,21 @@ import com.techlabs.model.Manager;
 
 public abstract class Test {
 	public static void main(String[] args) {
-		Manager m1=new Manager("abc", 101, 50000, Gender.MALE);
+
+		Manager m1 = new Manager("abc", 101, 50000, Gender.MALE);
 		printSalarySlip(m1);
-		
-		Developer d1=new Developer("xyz", 201, 50000, Gender.FEMALE);
+
+		Developer d1 = new Developer("xyz", 201, 50000, Gender.FEMALE);
 		printSalarySlip(d1);
-		
-		Analyst a1= new Analyst("pqr",301, 50000, Gender.FEMALE);
+
+		Analyst a1 = new Analyst("pqr", 301, 50000, Gender.FEMALE);
 		printSalarySlip(a1);
 	}
-	
-	public static void printSalarySlip(Employee e){
-		System.out.println(e.calculateNetSalary(50000));
+
+	public static void printSalarySlip(Employee e) {
+		System.out.println("Employee Name : " + e.getName());
+		System.out.println("Employee role is : "+e.getClass().getSimpleName());
+		System.out.println("Net salary of the employee is : " + e.calculateNetSalary(50000));
 	}
 
 }

@@ -39,6 +39,16 @@ public abstract class Account {
 		return age.getYears();
 	}
 	
+	public int getYoungAccHolders(Account[] accounts) {
+		int index=0;
+	    for(int i=0; i< accounts.length; i++) {
+	      if(accounts[i].getAge()<30) {
+	        index++;
+	      }
+	    }
+		return index;
+	}
+	
 	public int getAge() {
 		return age;
 	}

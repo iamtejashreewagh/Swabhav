@@ -17,5 +17,14 @@ public abstract class Employee {
 	public String getName() {
 		return name;
 	}
+	
+	public String getRole(Employee e) {
+		Class<? extends Employee> className = e.getClass();
+		String string = className.toString();
+		String[] role= string.split(" ");
+		String[] role1 = role[1].split("@");
+		//String[] role2 = role1[0].split(".");
+		return role1[0];
+	}
 
 }

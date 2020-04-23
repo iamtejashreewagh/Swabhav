@@ -15,7 +15,7 @@ public class Test {
 		printInfo(ca);
 	}
 	
-	public static void printInfo(Account acc) {
+	private static void printInfo(Account acc) {
 		System.out.println(acc.getBalance());
 	}
 
