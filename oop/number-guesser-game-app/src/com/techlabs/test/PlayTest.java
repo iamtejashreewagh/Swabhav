@@ -6,14 +6,13 @@ import com.techlabs.model.GameTerminal;
 public class PlayTest {
 	public static void main(String[] args) {
 		GameTerminal terminal = new GameTerminal();
-		Game number = new Game();
+		Game game = new Game();
 		int choice = 1;
 		while(choice == 1) {
-			number.generateNum();
-			choice = terminal.game(number);
+			game.generateNum();
+			choice = terminal.game(game);
 		
 		}
-		
 	}
 
 }
