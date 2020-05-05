@@ -16,7 +16,6 @@ public class FooTest {
 	public static void getMethods(Class className, Object obj)
 			throws IllegalAccessException, IllegalArgumentException,
 			InvocationTargetException {
-
 		Method[] methods = className.getDeclaredMethods();
 		for (Method method : methods) {
 			if (method.isAnnotationPresent(UnitTestCase.class)) {

@@ -1,6 +1,10 @@
 package com.techlabs.model;
 
 public class Foo {
+	@MyBeforeUnitTestCase
+	public void bar() {
+		System.out.println("Before Called");
+	}
 	@UnitTestCase
 	public boolean m1() {
 		return true; // passing testcase
@@ -19,5 +23,7 @@ public class Foo {
 	public boolean m4() {
 		return true; // passing testcase
 	}
+	
+	
 
 }
