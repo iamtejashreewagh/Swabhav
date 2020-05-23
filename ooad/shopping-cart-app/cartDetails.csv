@@ -1,0 +1,4 @@
+ ID : 101, Name : kishore Address : thane
+Order details :   id : 1, date : Sun Dec 29 00:00:00 IST 2019
+Line item details :  id : 201, product : book, quantity : 12, cost : 960.0 id : 202, product : pen, quantity : 10, cost : 100.0 id : 203, product : ruler, quantity : 5, cost : 80.0  id : 2, date : Sun Dec 29 00:00:00 IST 2019
+Line item details :  id : 301, product : bag, quantity : 2, cost : 8000.0 id : 302, product : mobile, quantity : 1, cost : 40000.0Cart Total : 49140.0
