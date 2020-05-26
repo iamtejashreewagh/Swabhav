@@ -1,6 +1,6 @@
 package com.techlabs.model;
 
-public class OperationSubstraction implements Strategy {
+public class OperationSubstraction implements IStrategy {
 	@Override
 	   public int doOperation(int num1, int num2) {
 	      return num1 - num2;
