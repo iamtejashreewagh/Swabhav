@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LISTENER 1</title>
+	</head>
+	<body id="myBody">
+		<div>
+      <h1>CLICK BUTTON :</h1>
+      <button type="button" id="redButton">RED</button>
+			<button type="button" id="blueButton">BLUE</button>
+		</div>
+    <h3 id="buttonAction"> </h3>
+	<script>
+		function redButton(){
+			document.body.style.backgroundColor = "#FF6347";
+		}
+		function blueButton(){
+			document.body.style.backgroundColor = "#76FAE7" ;
+		}
+		document.getElementById("redButton").addEventListener("click", redButton);
+		document.getElementById("blueButton").addEventListener("click", blueButton);
+	</script>
+	</body>
+</html>

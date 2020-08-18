@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CONSTRUCTOR PATTERN CASE 2 </title>
+<head>
+<body>
+	<script>
+		function Student(id, name){
+			this.id = id;
+			this.name = name;
+			var foo = "FOO";
+			this.getString = function(){
+				return "ID is " + this.id + " Name is " + this.name;
+			}
+		}
+		var s1 = new Student(101,"ABC");
+		var s2 = new Student(102, "PQR");
+		var s3 = new Student(103, "FOO");
+		
+		console.log(s1);
+		console.log(s2);
+		console.log(s3);
+		console.log(s1.getString());
+		console.log(s2.getString());
+		console.log(s1.foo);
+		console.log(s2.foo);
+	
+	</script>
+</body>
+</html>

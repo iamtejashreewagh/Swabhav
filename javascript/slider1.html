@@ -1,0 +1,20 @@
+<!docktype html>
+<html>
+	<head>
+		<title> SLIDER 1</title>
+		<body>
+			<div class="slider">
+				<input align="center" type="range" min="0" max="100" onchange="displayRange(this.value);">	
+			</div>
+			<h3 id ="rangeValue">
+			</h3>
+				<script>
+					function displayRange(value){
+					currentValue = "Current value is : "+value;
+						document.getElementById('rangeValue').textContent=currentValue;
+					}
+				</script>
+		</body>
+	</head>
+</html>
+		

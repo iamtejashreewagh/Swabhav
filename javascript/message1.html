@@ -1,0 +1,18 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> MESSAGE 1 </title>
+</head>
+<body id= "myBody">
+<div>
+ENTER YOUR TEXT : <input type="text" id= "text" onkeyup= "displayUpperCase()"><br>
+</div>
+<h3 id = "display"></h3>
+<script>
+	
+	function displayUpperCase(){
+		text = document.getElementById("text").value;
+		text = text.toUpperCase();
+		document.getElementById("display").textContent=text;
+	}
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SLIDER 2</title>
+	</head>
+	<body id="myBody">
+		<div>
+			<input type="range" min="0" max="100" onchange="displayRange(this.value);">
+		</div>
+		<h1 id="displayRange"></h1>
+		
+			<script>
+				var parentNode =  document.getElementById("displayRange");
+				function displayRange(value){
+					removePreviousButtons();
+				for (var i = 1; i <=value; i++) {
+					var button=document.createElement("button");
+					button.textContent=i;
+					button.id=i;
+					parentNode.appendChild(button);
+					button.addEventListener ("click", function() {
+					alert("Button no "+this.textContent+" clicked!!");
+					});
+				}
+				
+				function removePreviousButtons(){
+					while (parentNode.hasChildNodes()) {
+						parentNode.removeChild(parent.firstChild);
+					}
+				}
+			}
+			</script>
+	</body>
+</html>

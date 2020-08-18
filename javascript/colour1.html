@@ -1,0 +1,28 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> COLOUR 1 </title>
+</head>
+<body id = "myBody">
+<div>
+<select id = "colors" onchange="changeColour();">
+<option value = "none">SELECT </option>
+<option value = "RED">RED </option>
+<option value = "BLUE">BLUE </option>
+<option value = "GREEN">GREEN </option>
+</select>
+</div>
+<script>
+
+function changeColour(){
+	option = document.getElementById('colors');
+	if(option.value=="RED"){
+	document.body.style.backgroundColor="#FF6347"}
+	else if(option.value=="BLUE"){
+	document.body.style.backgroundColor="#76FAE7"}
+	else if(option.value=="GREEN"){
+	document.body.style.backgroundColor="#76FA81"}
+}
+</script>
+</body>
+</html>

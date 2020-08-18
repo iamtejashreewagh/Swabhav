@@ -1,0 +1,27 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> COLOUR 2 </title>
+</head>
+<body id = "myBody">
+<div>
+<select id = "colors" onchange="changeColour();">
+<option value = "none">SELECT </option>
+<option value = "RED">RED </option>
+<option value = "BLUE">BLUE </option>
+<option value = "GREEN">GREEN </option>
+</select>
+</div>
+<script>
+	var colours = new Map();
+	colours.set("RED", "#FF6347");
+	colours.set("BLUE", "#76FAE7");
+	colours.set("GREEN", "#76FA81");
+	
+	function changeColour(){
+		option = document.getElementById('colors');
+		if(option.value!=="none"){
+		document.body.style.backgroundColor = colours.get(option.value);
+		}
+	}
+</script>

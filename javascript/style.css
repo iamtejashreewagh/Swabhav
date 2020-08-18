@@ -1,0 +1,83 @@
+li:hover {
+	 padding: 20px 15px 20px 50px;
+  background:#8CA3AE ;
+}
+body{
+	background-color: 	#ADDFF7;
+  padding: 20px 35px;
+  color: black;
+  text-align: center;
+}
+h3{
+	padding: 10px;
+	text-align: center;
+
+}
+
+.CompletedElement{
+  background: #33CC00;
+}
+
+.IncompletedElements {
+  background: #FF0000 ;
+}
+
+.myUL{
+  background: green;
+}
+.addBtn{
+	padding: 5px;
+	background: #ddd;
+	color: white
+	position: absolute;
+}
+
+li {
+
+	margin: 25px;
+	color: black;
+    position: relative;
+  padding: 15px 20px 15px 20px;
+  background: #eee;
+  font-size: 20px;
+  text-align: center;
+
+
+}
+.addBtn:hover {
+  background-color: #bbb;
+}
+.close{
+
+	position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  font-size: 30px;
+  
+  
+}
+.check{
+
+  position: absolute;
+  left: 30px;
+  top:5;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  
+}
+
+.close:hover{
+	position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  color: red;
+  border: none;
+  font-size: 30px;
+}
+
